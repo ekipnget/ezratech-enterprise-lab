@@ -35,11 +35,11 @@ it represents an employee workstation. it's functions includes: joining the AD D
 
 When a user opens a web browser in windows 11 client, the following process occurs:
 
-## 1. The client sends traffic to the dafault gateway (pfSense).
-## 2. pfSense examines the firewall rules. 
-## 3. if the traffic is permitted, pfSense performs NAT.
-## 4. The traffic is forwarded to the internet.
-## 5. Responses return through pfSense before reaching the client.
+1. The client sends traffic to the dafault gateway (pfSense).
+2. pfSense examines the firewall rules. 
+3. if the traffic is permitted, pfSense performs NAT.
+4. The traffic is forwarded to the internet.
+5. Responses return through pfSense before reaching the client.
 
 ## Why PfSense was selected?
 
