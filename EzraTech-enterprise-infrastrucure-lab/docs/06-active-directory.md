@@ -45,8 +45,7 @@ Managing comptuters individually becomes difficult as organization grows. Active
 - Attach Windows Server ISO
 - Install Windows Server
 
-# screenshots - windows server installation Wizard
-![Windows Server installation Wizard](..screenshots/active-directory/installation.png>)
+![Windows server 2019 installation Wizard](../screenshots/active-directory/Windows-server-install-wizard.png)
 
 # Validation
 
