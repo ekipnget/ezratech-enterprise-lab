@@ -46,7 +46,7 @@ Managing comptuters individually becomes difficult as organization grows. Active
 - Install Windows Server
 
 # screenshots - windows server installation Wizard
-![Windows Server installation Wizard](<Screenshot 2026-08-21 175550.png>)
+![Windows Server installation Wizard](..screenshots/active-directory/installation.png>)
 
 # Validation
 
