@@ -106,7 +106,7 @@ The solution should also meet the following objectives.
 - Relaible DHCP
 - Consistent user authentication
 
-## scalability
+## Scalability
 
 The infrastrcure should support future growth beyond 50 employees.
 
