@@ -52,6 +52,7 @@ Managing comptuters individually becomes difficult as organization grows. Active
 The server successful boots to windows desktop
 
 # screenshot - windows server install
+![Windows-server-2019-successful boot](../screenshots/active-directory/windows-server-successful-boot.png)
 
 # Section 2 - Rename the server
 
