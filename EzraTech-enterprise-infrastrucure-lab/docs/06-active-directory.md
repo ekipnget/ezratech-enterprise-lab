@@ -51,9 +51,8 @@ Managing comptuters individually becomes difficult as organization grows. Active
 
 The server successful boots to windows desktop
 
-# screenshot - windows serverinstall 
-![Windows serverinstall](../screenshots/active-directory/windows-server-successful-boot.png)
-
+# screenshot - windows server install
+![Windows Server Successful Install](../screenshots/active-directory/)
 # Section 2 - Rename the server
 
 # 2. Rename the server
@@ -78,7 +77,6 @@ Meaningful hostnames simplify:
 The server restarts successfuly with the new hostname
 
 ## screenshot - rename server.png
-![Rename windows server](../screenshots/active-directory/rename-server.png)
 
 # Section 3 - Configure Static  IP
 
