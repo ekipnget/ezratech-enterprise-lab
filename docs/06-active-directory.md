@@ -1,6 +1,6 @@
 # Active directory Deployement
 
-## objective
+## Objective
 
 The objective of this document is to deploy Active Directory Domain Services (AD DS) to provide centralized authentication, and management for EzraTech enterprise environment.
 
@@ -51,7 +51,7 @@ Managing comptuters individually becomes difficult as organization grows. Active
 
 The server successful boots to windows desktop
 
-# screenshot - windows serverinstall 
+# Screenshot - windows serverinstall 
 ![Windows serverinstall](../screenshots/active-directory/windows-server-2019-successful-boot.png)
 
 # Section 2 - Rename the server
@@ -72,12 +72,12 @@ Meaningful hostnames simplify:
 - Documentation 
 - Troubleshooting
 
-## screenshot - system properties showing hostname DC01
+## Screenshot - system properties showing hostname DC01 or simply run the command "hostname" in command prompt.
 
 ## Validation
 The server restarts successfuly with the new hostname
 
-## screenshot - rename server.png
+## Screenshot - rename server.png
 ![Rename windows server](../screenshots/active-directory/rename-server.png)
 
 # Section 3 - Configure Static  IP
@@ -93,7 +93,8 @@ Subnet Mask - 255.255.255.0
 Gateway - 192.168.10.1
 DNS - 192.168.10.10
 
-# screenshot - IPV properties
+# Screenshot - IPV properties
+![IPV4 server properties](../screenshots/active-directory/ipv4-server-properties.png)
 
 ## Validation 
 ipconfig /all confirms the configuration
