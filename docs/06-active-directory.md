@@ -45,14 +45,14 @@ Managing comptuters individually becomes difficult as organization grows. Active
 - Attach Windows Server ISO
 - Install Windows Server
 
-![Windows server 2019 installation Wizard](../screenshots/active-directory/Windows-server-install-wizard.png)
+![Windows server 2019 installation Wizard](../screenshots/active-directory/windows-server-install-wizard.png)
 
 # Validation
 
 The server successful boots to windows desktop
 
 # screenshot - windows serverinstall 
-![Windows serverinstall](../screenshots/active-directory/windows-server-successful-boot.png)
+![Windows serverinstall](../screenshots/active-directory/windows-server-2019-successful-boot.png)
 
 # Section 2 - Rename the server
 
