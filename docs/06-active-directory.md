@@ -114,6 +114,7 @@ Active Directory Domain Services
 This roles enables the server to become the Domain Controller capable of authetication users and computers.
 
 # Screenshot  - AD roles Features wizard, install-adds role
+![Active Directory roles installation wizard](../screenshots/active-directory/ad-roles-features.png)
 
 ## Validation
 
@@ -125,16 +126,14 @@ The AD DS role appears unders the installed packages.
 
 After installing the AD DS role, the server was promoted to a Domain Controller.
 
-New Forest
-corp.ezratech.local
-Forest Functional level
-Windows Server 2019
-Domain Functional level
-Windows Server 2019
+New Forest - corp.ezratech.local
+Forest Functional level - windows server 2019
+Domain Functional level windows server 2019
 DNS - Installed
 Global catalog - enabled
 
 ## Screenshot Deployment configuration wizard, promote server.png, domain-created.png
+![Server creation](../screenshots/active-directory/server-created.png)
 
 ## Validation
 
@@ -152,6 +151,7 @@ The following tools were verified:
 - Server Manager
 
 ## screenshot - Server manager dashboard
+![Server manager dashboard](../screenshots/active-directory/server-dashboard.png)
 
 # Section 7 - Create the Organizational Unit (OU) strucure
 
@@ -174,6 +174,7 @@ EzraTech
  - Sales
 
  ## Screenshot - Active Directory Users and computers displaying EzraTech OU strucure
+ ![OU strucure](../screenshots/active-directory/ou-strucure.png)
 
  # Section 8 - Create Security Groups
 
@@ -193,6 +194,7 @@ EzraTech
  Instead of assigning permissions to individual Users e.g Ezra - shared folder, John - shared folder permissions are assigned once to a specific group. For example, Finance_Users - Finance Folder. All Finance employees inherit the required permissions through the group membership.
 
  # Screenshots of security groups created in AD
+ ![Security Groups](../screenshots/active-directory/security-groups.png)
 
  # Section 9 - Create User Accounts
 
@@ -214,7 +216,8 @@ EzraTech
  - Password change at first login
  - Department assignment
 
- # screenshots of user accounts displayed in AD
+ # screenshots of user accounts displayed in AD - created a user in each OU > IT, Sales etc
+ ![Users in each OU](../screenshots/active-directory/users.png)
 
  # Section 10 - Join the Windows 11 client
 
