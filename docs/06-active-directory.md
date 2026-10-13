@@ -1,4 +1,4 @@
-# Active directory Deployement
+# Active directory Deployment
 
 ## Objective
 
@@ -142,7 +142,7 @@ The server restarts successfully and the domain created.
 # Section 6 - Verify Active Directory 
 
 # 6. Verify Active Directory administration tools became available.
-After rebooting, Active Directory administrative became available.
+After rebooting, Active Directory administrative tools became available.
 
 The following tools were verified:
 
@@ -234,11 +234,15 @@ EzraTech
 
  The windows 11 client was configured to use the Domain Controller as it's DNS Server.
 
+ # NOTE: Set the DNS server settings to DC01 IP Address. This matters because the domain join fails immediately if the client cannot resolve the domain's SRV records know about it.
+
 The computer was then joined to Active Directory Domain.
 
 After joining the domain, the computer was restarted.
 
 ## system properties showing the computer was joined to the domain
+
+![System properties PC01](../screenshots/active-directory/win10-system-properties.png)
 
 ## Validation
 
@@ -264,6 +268,8 @@ The following items were confirmed.
 - Group policy processing initiated
 
 ## screenshot - windows 11 login screen showing successful domain login
+
+![Michael Brown domain login](../screenshots/active-directory/Mbrown-domain-login.png)
 
 
 

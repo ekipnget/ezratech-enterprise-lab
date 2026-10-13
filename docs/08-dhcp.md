@@ -61,7 +61,7 @@ Subnet Mask | 255.255.255.0
 
 The scope is active and ready to lease address.
 
-## COnfigure DHCP options
+## Configure DHCP options
 
 Provide additional network settings to clients automatically.
 
@@ -87,11 +87,11 @@ Clients successfily received the correct gateway, DNS server, and domain name.
 
 Reserve specific addresses for devices that should always receive the same address. Examples include: Network devices, NAS devices and Future application servers.
 
-## screenshot -- DHCP recervation
+## screenshot -- DHCP reservation
 
 ## validation
 
-Reserves devices always receive their assigned IP addresses.
+Reserved devices always receive their assigned IP addresses.
 
 # Test DHCP
 
