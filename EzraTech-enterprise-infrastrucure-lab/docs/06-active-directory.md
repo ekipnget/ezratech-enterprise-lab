@@ -1,6 +1,6 @@
-# Active directory Deployement
+# Active directory Deployment
 
-## objective
+## Objective
 
 The objective of this document is to deploy Active Directory Domain Services (AD DS) to provide centralized authentication, and management for EzraTech enterprise environment.
 
@@ -45,14 +45,14 @@ Managing comptuters individually becomes difficult as organization grows. Active
 - Attach Windows Server ISO
 - Install Windows Server
 
-![Windows server 2019 installation Wizard](../screenshots/active-directory/Windows-server-install-wizard.png)
+![Windows server 2019 installation Wizard](../screenshots/active-directory/windows-server-install-wizard.png)
 
 # Validation
 
 The server successful boots to windows desktop
 
-# screenshot - windows server install
-![Windows-server-2019-successful boot](../screenshots/active-directory/windows-server-successful-boot.png)
+# Screenshot - windows serverinstall 
+![Windows serverinstall](../screenshots/active-directory/windows-server-2019-successful-boot.png)
 
 # Section 2 - Rename the server
 
@@ -72,12 +72,13 @@ Meaningful hostnames simplify:
 - Documentation 
 - Troubleshooting
 
-## screenshot - system properties showing hostname DC01
+## Screenshot - system properties showing hostname DC01 or simply run the command "hostname" in command prompt.
 
 ## Validation
 The server restarts successfuly with the new hostname
 
-## screenshot - rename server.png
+## Screenshot - rename server.png
+![Rename windows server](../screenshots/active-directory/rename-server.png)
 
 # Section 3 - Configure Static  IP
 
@@ -92,7 +93,8 @@ Subnet Mask - 255.255.255.0
 Gateway - 192.168.10.1
 DNS - 192.168.10.10
 
-# screenshot - IPV properties
+# Screenshot - IPV properties
+![IPV4 server properties](../screenshots/active-directory/ipv4-server-properties.png)
 
 ## Validation 
 ipconfig /all confirms the configuration
@@ -112,6 +114,7 @@ Active Directory Domain Services
 This roles enables the server to become the Domain Controller capable of authetication users and computers.
 
 # Screenshot  - AD roles Features wizard, install-adds role
+![Active Directory roles installation wizard](../screenshots/active-directory/ad-roles-features.png)
 
 ## Validation
 
@@ -123,16 +126,14 @@ The AD DS role appears unders the installed packages.
 
 After installing the AD DS role, the server was promoted to a Domain Controller.
 
-New Forest
-corp.ezratech.local
-Forest Functional level
-Windows Server 2019
-Domain Functional level
-Windows Server 2019
+New Forest - corp.ezratech.local
+Forest Functional level - windows server 2019
+Domain Functional level windows server 2019
 DNS - Installed
 Global catalog - enabled
 
 ## Screenshot Deployment configuration wizard, promote server.png, domain-created.png
+![Server creation](../screenshots/active-directory/server-created.png)
 
 ## Validation
 
@@ -141,7 +142,7 @@ The server restarts successfully and the domain created.
 # Section 6 - Verify Active Directory 
 
 # 6. Verify Active Directory administration tools became available.
-After rebooting, Active Directory administrative became available.
+After rebooting, Active Directory administrative tools became available.
 
 The following tools were verified:
 
@@ -150,6 +151,7 @@ The following tools were verified:
 - Server Manager
 
 ## screenshot - Server manager dashboard
+![Server manager dashboard](../screenshots/active-directory/server-dashboard.png)
 
 # Section 7 - Create the Organizational Unit (OU) strucure
 
@@ -172,6 +174,7 @@ EzraTech
  - Sales
 
  ## Screenshot - Active Directory Users and computers displaying EzraTech OU strucure
+ ![OU strucure](../screenshots/active-directory/ou-strucure.png)
 
  # Section 8 - Create Security Groups
 
@@ -191,6 +194,7 @@ EzraTech
  Instead of assigning permissions to individual Users e.g Ezra - shared folder, John - shared folder permissions are assigned once to a specific group. For example, Finance_Users - Finance Folder. All Finance employees inherit the required permissions through the group membership.
 
  # Screenshots of security groups created in AD
+ ![Security Groups](../screenshots/active-directory/security-groups.png)
 
  # Section 9 - Create User Accounts
 
@@ -212,7 +216,8 @@ EzraTech
  - Password change at first login
  - Department assignment
 
- # screenshots of user accounts displayed in AD
+ # screenshots of user accounts displayed in AD - created a user in each OU > IT, Sales etc
+ ![Users in each OU](../screenshots/active-directory/users.png)
 
  # Section 10 - Join the Windows 11 client
 
@@ -229,11 +234,15 @@ EzraTech
 
  The windows 11 client was configured to use the Domain Controller as it's DNS Server.
 
+ # NOTE: Set the DNS server settings to DC01 IP Address. This matters because the domain join fails immediately if the client cannot resolve the domain's SRV records know about it.
+
 The computer was then joined to Active Directory Domain.
 
 After joining the domain, the computer was restarted.
 
 ## system properties showing the computer was joined to the domain
+
+![System properties PC01](../screenshots/active-directory/win10-system-properties.png)
 
 ## Validation
 
