@@ -269,7 +269,7 @@ The following items were confirmed.
 
 ## screenshot - windows 11 login screen showing successful domain login
 
-![Michael Brown domain login](../screenshots/active-directory/Mbrown-domain-login.png)
+![Michael Brown domain login](../screenshots/active-directory/mbrown-domain-login.png)
 
 
 
