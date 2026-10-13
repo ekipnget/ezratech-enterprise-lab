@@ -46,7 +46,11 @@ Detailed project documentation:
 13.[Trobleshooting]
 14.[Lessons Learned]
 
+<<<<<<< HEAD
+# Auuthor
+=======
 # Author
+>>>>>>> 67c70a0449311719189294e054f5ee5e9aa47ba6
 
 Ezra Kipngetich
 
